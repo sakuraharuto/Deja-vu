@@ -12,8 +12,9 @@ public class FinishManager : MonoBehaviour
         if (other.tag == "Player"){
 
             Debug.Log("You win");
-            
+
             //Play effect
+            finishEffect.Play();
             //Play SFX
 
             Invoke("ReloadScene", reloadDelay);
