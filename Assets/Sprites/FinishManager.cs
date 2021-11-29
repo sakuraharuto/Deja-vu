@@ -16,6 +16,7 @@ public class FinishManager : MonoBehaviour
             //Play effect
             finishEffect.Play();
             //Play SFX
+            GetComponent<AudioSource>().Play();
 
             Invoke("ReloadScene", reloadDelay);
         }
