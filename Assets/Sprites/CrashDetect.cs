@@ -19,6 +19,7 @@ public class CrashDetect : MonoBehaviour
             FindObjectOfType<Car>().DisableControl();
 
             //Play Effect
+            crashEffect.Play();
 
             //Play SFX
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
